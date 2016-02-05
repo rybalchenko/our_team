@@ -1003,7 +1003,7 @@ select {
           transform: translateX(-50%);
 }
 .ba-slider .slick-dots li {
-  display: inline-blocKBk;
+  display: inline-block;
   font-size: 0;
 }
 .ba-slider .slick-dots li button {
