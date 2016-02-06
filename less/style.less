@@ -85,7 +85,7 @@ textarea {
 		line-height: 1;
 		letter-spacing: 0.4px;
 	}
-	& h2 {
+	& h1 {
 		font-family: 'Roboto', Arial, sans-serif;
 		color: @yellow-color;
 		font-size: 60px;
@@ -123,16 +123,46 @@ textarea {
 .ba-about {
 	&__photo {
 		margin-top: 90px;
+		padding: 14px;
+		background: #FFF;
+		border: 1px solid @yellow-color;
+		display: inline-block;
+		position: relative;
 		& img {
 			border: 1px solid @yellow-color;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+			position: relative;
+			z-index: 2;
 		}
+		&:before, &:after{
+			content: '';
+			position: absolute;
+			display: block;
+			background: #FFF;
+			z-index: 1;
+			margin: auto;
+		}
+		&:before {
+			left: 0;
+			right: 0;
+			top: -2px;
+			bottom: -2px;
+			width: 50%;
+		}
+		&:after {
+			height: 50%;
+			left: -2px;
+			right: -2px;
+			top: 0;
+			bottom: 0;
+		}
+
 	}
 	&__contain {
 		border-left: 1px solid @yellow-color;
 		padding: 40px 0 30px;
+		@media (max-width:767px) {
+			border-left: none;
+		}
 	}
 	&__name {
 		font-family: 'Roboto', Arial, sans-serif;
@@ -164,7 +194,7 @@ textarea {
 			list-style: none;
 			width: 30px;
 			height: 30px;
-			line-height: 25px;
+			line-height: 30px;
 			border: 2px solid #cccccc;
 			border-radius: 50%;
 			color: #cccccc;
@@ -234,11 +264,11 @@ textarea {
 	}
 	.slick-prev {
 		background: url(../img/left-arrow.png) no-repeat 50%;
-		left: 100px;
+		left: -70px;
 	}
 	.slick-next {
 		background: url(../img/right-arrow.png) no-repeat 50%;
-		right: 100px;
+		right: 0px;
 	}
 	.slick-dots {
 		position: absolute;
