@@ -756,7 +756,7 @@ select {
   text-align: center;
 }
 .ba-header h3 {
-  margin-top: 20px;
+  margin-top: 50px;
   color: #898f8f;
   font-size: 18px;
   line-height: 1;
@@ -795,8 +795,12 @@ select {
   height: 19px;
   color: #ffcc00;
 }
+.ba-about {
+  margin-bottom: 70px;
+}
 .ba-about__photo {
   margin-top: 90px;
+  padding-bottom: 50px;
   padding: 14px;
   background: #FFF;
   border: 1px solid #ffcc00;
@@ -887,25 +891,15 @@ select {
   position: relative;
 }
 .ba-about__content:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 4px;
-  width: 50px;
+  width: 10px;
   background-color: #ffcc00;
-  display: block;
-  left: 50%;
-  bottom: 5px;
-  margin-left: -25px;
-}
-.ba-about__content:after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 15px;
-  margin-left: -15px;
-  border: 4px solid #fff;
-  left: 50%;
+  box-shadow: 10px 0 0 0 #ffcc00, -15px 0 0 0 #ffcc00, 25px 0 0 0 #ffcc00;
   bottom: 0;
+  left: 50%;
+  margin-left: -5px;
 }
 /* Slider */
 .slick-slider {
@@ -1016,7 +1010,7 @@ select {
 }
 .ba-slider .slick-prev {
   background: url(../img/left-arrow.png) no-repeat 50%;
-  left: -70px;
+  left: 0px;
 }
 .ba-slider .slick-next {
   background: url(../img/right-arrow.png) no-repeat 50%;

@@ -79,7 +79,7 @@ textarea {
 .ba-header {
 	text-align: center;
 	& h3 {
-		margin-top: 20px;
+		margin-top: 50px;
 		color: #898f8f;
 		font-size: 18px;
 		line-height: 1;
@@ -117,12 +117,13 @@ textarea {
 			height: 19px;
 			color: @yellow-color;
 		}
-
 	}
 }
 .ba-about {
+	margin-bottom: 70px;
 	&__photo {
 		margin-top: 90px;
+		padding-bottom: 50px;
 		padding: 14px;
 		background: #FFF;
 		border: 1px solid @yellow-color;
@@ -155,7 +156,6 @@ textarea {
 			top: 0;
 			bottom: 0;
 		}
-
 	}
 	&__contain {
 		border-left: 1px solid @yellow-color;
@@ -212,26 +212,37 @@ textarea {
 		margin-bottom: 10px;
 		position: relative;
 		&:before {
-			content: '';
+			content: "";
 			position: absolute;
 			height: 4px;
-			width: 50px;
-			background-color: @yellow-color;
-			display: block;
-			left: 50%;
-			bottom: 5px;
-			margin-left: -25px;
-		}
-		&:after {
-			content: '';
-			position: absolute;
-			width: 30px;
-			height: 15px;
-			margin-left: -15px;
-			border: 4px solid #fff;
-			left: 50%;
+			width: 10px;
+			background-color: #ffcc00;
+			box-shadow: 10px 0 0 0 #ffcc00,-15px 0 0 0 #ffcc00,25px 0 0 0 #ffcc00;
 			bottom: 0;
+			left: 50%;
+			margin-left: -5px;
 		}
+		// &:before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	height: 4px;
+		// 	width: 50px;
+		// 	background-color: @yellow-color;
+		// 	display: block;
+		// 	left: 50%;
+		// 	bottom: 5px;
+		// 	margin-left: -25px;
+		// }
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	width: 30px;
+		// 	height: 15px;
+		// 	margin-left: -15px;
+		// 	border: 4px solid #fff;
+		// 	left: 50%;
+		// 	bottom: 0;
+		// }
 	}
 }
 
@@ -264,7 +275,7 @@ textarea {
 	}
 	.slick-prev {
 		background: url(../img/left-arrow.png) no-repeat 50%;
-		left: -70px;
+		left: 0px;
 	}
 	.slick-next {
 		background: url(../img/right-arrow.png) no-repeat 50%;
